@@ -14,6 +14,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { AuthServiceService } from './Services/auth-service.service';
 import { TokenService } from './Services/token.service';
 import { AuthStateService } from './Services/auth-state.service';
+import { AfterLoginService } from './Services/after-login.service';
+import { BeaforeLoginService } from './Services/beafore-login.service';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { AuthStateService } from './Services/auth-state.service';
   ],
   providers: [AuthServiceService, 
               TokenService,
-              AuthStateService],
+              AuthStateService,
+            AfterLoginService,
+          BeaforeLoginService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
