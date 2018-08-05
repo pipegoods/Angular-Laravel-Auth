@@ -23,7 +23,6 @@ private Token: TokenService) { }
     event.preventDefault();
     this.Token.remove();
     this.AuthStat.changeAuthStatus(false);
-    
     this.router.navigateByUrl('/login');
   }
 }

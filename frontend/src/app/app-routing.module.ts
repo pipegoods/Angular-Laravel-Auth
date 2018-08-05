@@ -27,11 +27,13 @@ const appRoutes: Routes = [
   },
   {
     path: 'request-password-reset',
-    component: RequestResetComponent
+    component: RequestResetComponent,
+    canActivate: [BeaforeLoginService]
   },
   {
     path: 'response-password-reset',
-    component: ResponseResetComponent
+    component: ResponseResetComponent,
+    canActivate: [BeaforeLoginService]
   },
   
 ];
